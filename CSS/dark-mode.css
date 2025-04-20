@@ -41,6 +41,12 @@ body:has(.chefs:target):has(.mode:checked) li a[href="#chefs"] {
     );
 }
 
+:root:has(.mode:checked)  .navbar:has(.nav-list:target) .nav-list {
+    background-color: var(--color-light-grey);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid #818181;
+}
+
 :root:has(.mode:checked) .chefs .container .chefs-cards .card .card-img::before {
     background-image: url("../img/team-shape-dark.svg");
 }
