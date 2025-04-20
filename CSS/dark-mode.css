@@ -28,6 +28,7 @@ body:has(.mode:checked) .home-content p {
 :root:has(.mode:checked) .mode-group .light {
     display: block;
 }
+
 body:not(body:has(:target)):has(.mode:checked) li a[href="#home"],
 body:has(.home:target):has(.mode:checked) li a[href="#home"],
 body:has(.contact:target):has(.mode:checked) li a[href="#contact"],
@@ -42,6 +43,21 @@ body:has(.chefs:target):has(.mode:checked) li a[href="#chefs"] {
 
 :root:has(.mode:checked) .chefs .container .chefs-cards .card .card-img::before {
     background-image: url("../img/team-shape-dark.svg");
+}
+
+:root:has(.mode:checked) .contact :is(input, textarea) {
+    background-color: var(--color-light-grey);
+    color: var(--color-default);
+}
+
+:root:has(.mode:checked) .footer .container .subscription .subscription-form input {
+    background-color: var(--color-light-grey);
+    color: var(--color-default);
+    border: 1px solid var(--color-default);
+}
+:root:has(.mode:checked) .footer .container .subscription .subscription-form input:focus  {
+    outline: none;
+    border: 1px solid var(--color-primary);
 }
 
 body:has(.mode:checked) .contact .contact-details > div h3 {

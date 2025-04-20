@@ -726,7 +726,6 @@ body:has(.chefs:target) li a[href="#chefs"]::before {
     color: var(--color-light);
     cursor: pointer;
     font-size: .975rem;
-    /* flex-grow: 1; */
 }
 .footer .container .subscription .subscription-form button:hover {
     background-color: hsl(
