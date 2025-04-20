@@ -1,0 +1,240 @@
+@media screen and (max-width: 300px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .gallery .container .gallery-container {
+        columns: 1;
+    }
+}
+
+@media screen and (min-width: 301px) {
+    .container {
+        width: 95%;
+    }
+    .home .home-content .btn-group {
+        flex-direction: row;
+    }
+
+    /* =========================> gallery <=========== */
+    .gallery .container .gallery-container .gallery-imgs-1 
+    {
+        order   : 1;
+    }
+    .gallery .container .gallery-container .gallery-imgs-2 
+    {
+        order   : 3;
+    }
+    .gallery .container .gallery-container .gallery-imgs-3 
+    {
+        order   : 5;
+    }
+    .gallery .container .gallery-container .gallery-imgs-4 
+    {
+        order   : 4;
+    }
+    .gallery .container .gallery-container .gallery-imgs-5 
+    {
+        order   : 2;
+    }
+    .gallery .container .gallery-container .gallery-imgs-6 
+    {
+        order   : 5;
+    }
+    .gallery .container .gallery-container .gallery-imgs-7 
+    {
+        order   : 7;
+    }
+    /* =========================> footer  <=========== */
+
+
+}
+
+@media screen and (min-width: 640px) {
+
+    /* =========================> container <=========== */
+    .container {
+        max-width: 540px;
+    }
+    
+    /* ===========================> Navbar <=========== */
+    .nav-list {
+        width: 350px;
+    }
+    
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    /* =======================> container <=========== */
+    .navbar .container {
+        max-width: 720px;
+    }
+    
+    
+
+}
+
+@media screen and (min-width: 900px) {
+    /* ============================> footer <============== */
+    .footer .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer .container :is(.about, .get-in-touch) {
+        width: calc(calc(100% - var(--gap) * 2) / 2);
+        order : 1;
+    }
+    .footer .container :is(.subscription) {
+        width: calc(calc(100% - var(--gap) * 2) / 1);
+        order : 2;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    /* ========================> container <=========== */
+    
+    .container {
+        max-width: 90%;
+    }
+    /* ==========================> Navbar <=========== */
+    .navbar .container {
+        max-width: 90%;
+    }
+    /* ============================> Home <============== */
+    .home .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .home .home-content{
+        align-items: start;
+        text-align: left;
+        gap: 10px;
+    }
+
+    /* ==========================> chefs <============== */
+    
+    .chefs .container .chefs-cards .card{
+        width: calc(calc(100% - var(--gap)) / 2);
+    }
+
+    /* ==========================> gallery <============== */
+    .gallery .container .gallery-container 
+    {
+        display: block;
+        columns: 2;
+    }
+    /* ===========================> contact <============== */
+    .contact .container .contact-details .contact-card {
+        width: calc(calc(100% - 1rem) / 2);
+        display: flex;
+        align-items: center;
+        padding: 1.5625rem;
+        border-radius: 5px;
+    }
+    .contact .container .contact-form .input-group {
+        flex-direction: row;
+    }
+    .contact .container .contact-form .input-group input {
+        width: calc(calc(100% - var(--gap)) / 2);
+    }
+    
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    /* ========================> container <=========== */
+    .container{
+        max-width: 90%;
+    }
+
+    
+    /* =======================> Navbar <=========== */
+    .nav-list {
+        flex-direction: row;
+        gap: 0 var(--gap-inline) ;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        border-left: none;
+        transform: none;
+    }
+    .navbar .nav-list a {
+        position: relative;
+        padding: 0 ;
+    }
+    .navbar .mode-group {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .nav-list .close-icon {
+        display: none;
+    }
+    .navbar .menu-icon {
+        display: none;
+    }
+
+
+    /* ==========================> Home <============== */
+    .home .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 1.5rem 0;
+    }
+
+    .home .home-content{
+        align-items: start;
+        text-align: left;
+        gap: 10px;
+        width: 40%;
+    }
+    .home .home-image {
+        width: 40%;
+    }
+    .home .home-content p {
+        flex-direction: row;
+        gap: 0 var(--gap-inline) ;
+    }
+    .home .home-content .btn-group .btn-main {
+        border-radius: 0 100vh  100vh;
+    }
+
+    /*  ======================> chefs <============== */
+    
+    .chefs .container .chefs-cards .card{
+        width: calc(33.3333% - var(--gap));
+    }
+
+    /* ==========================> gallery <============== */
+    .gallery .container .gallery-container 
+    {
+        display: block;
+        columns: 3;
+    }
+    /* ===========================> footer <============== */
+    .footer .container {
+        flex-direction: row;
+    }
+    .footer .container :is(.about, .get-in-touch) {
+        width: calc(calc(100% - var(--gap) * 2) / 4);
+        order : 0;
+    }
+    .footer .container :is(.subscription) {
+        width: calc(calc(100% - var(--gap) * 2) / 2);
+        order : 0;
+    }
+    
+    .footer .container .subscription .subscription-form {
+        flex-direction: row;
+    }
+    
+    
+    
+    
+}
